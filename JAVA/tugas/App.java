@@ -1,10 +1,17 @@
 package tugas;
 
+import java.util.*;
+
 public class App {
     public static void main(String[] args) {
-        NIM nim = new NIM("12050116400");
+        String nimScan = "";
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Masukkan NIM anda : ");
+        nimScan = scan.next();
 
-        System.out.println("NIM : " + nim);
+        NIM nim = new NIM(nimScan);
+
+        System.out.println("NIM : " + nimScan);
         System.out.println("Jenjang Pendidikan : " + nim.jenjangPendidikan());
         System.out.println("Angkatan : " + nim.angkatan());
         System.out.println("Fakultas : " + nim.fakultas());
