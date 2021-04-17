@@ -17,7 +17,7 @@ public class NIM {
             return "S1 (Sarjana)";
         }else if (jenjang.equalsIgnoreCase("2")) {
             return "S2 (Magister)";
-        }else if (jenjang.equalsIgnoreCase("2")) {
+        }else if (jenjang.equalsIgnoreCase("3")) {
             return "S3 (Doktor)";
         }
         return "NOT FOUND";
@@ -57,7 +57,7 @@ public class NIM {
     public String prodi() {
         if (this.nim.substring(4, 6).equalsIgnoreCase("01")) {
             return "Prodi Teknik Informatika";
-        }else if (this.nim.equalsIgnoreCase("02")) {
+        }else if (this.nim.equalsIgnoreCase("01")) {
             return "Prodi Teknik Industri";
         }else if (this.nim.equalsIgnoreCase("02")) {
             return "Sistem Informasi";
@@ -69,7 +69,7 @@ public class NIM {
     public String jenisKelamin() {
         if (this.nim.substring(6, 7).equalsIgnoreCase("1")) {
             return "Laki-Laki";
-        }else if (this.nim.equalsIgnoreCase("2")){
+        }else if (this.nim.substring(6, 7).equalsIgnoreCase("2")){
             return "Perempuan";
         }
         return "NOT FOUND";
