@@ -57,9 +57,9 @@ public class NIM {
     public String prodi() {
         if (this.nim.substring(4, 6).equalsIgnoreCase("01")) {
             return "Prodi Teknik Informatika";
-        }else if (this.nim.equalsIgnoreCase("02")) {
+        }else if (this.nim.substring(4, 6).equalsIgnoreCase("02")) {
             return "Prodi Teknik Industri";
-        }else if (this.nim.equalsIgnoreCase("03")) {
+        }else if (this.nim.substring(4, 6).equalsIgnoreCase("03")) {
             return "Sistem Informasi";
         }
         return "NOT FOUND";
